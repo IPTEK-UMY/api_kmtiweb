@@ -77,18 +77,18 @@
 		route : /proker/:id
 		method : DELETE
 
-peningkatan berikutnya : 
-	memperbaiki kekurangan dari yang sudah ada dalam CREATE, UPDATE, dan DELETE
-	mencari data api berdasarkan nama untuk READ data
-	mencari data api berdasarkan nama divisi lalu menampilkan informasi anggota divisi
-	mengubah route dengan memisak untuk id dan nama
+- peningkatan berikutnya : 
+	1. memperbaiki kekurangan dari yang sudah ada dalam CREATE, UPDATE, dan DELETE
+	2. mencari data api berdasarkan nama untuk READ data
+	3. mencari data api berdasarkan nama divisi lalu menampilkan informasi anggota divisi
+	4. mengubah route dengan memisak untuk id dan nama
 		- /id/:id
 		- /nama/:nama
 
-catatatn penting : 
-	- jangan lupa menggunakan CORS agar API tidak diblokir oleh browser
-	- jangan lupa untuk setiap route tambahkan body parser dan express.urlencoder
-	- untuk API yang membutuhkakn insert data image jangan lupa menggunakan multer
+- catatatn penting : 
+	1. jangan lupa menggunakan CORS agar API tidak diblokir oleh browser
+	2. jangan lupa untuk setiap route tambahkan body parser dan express.urlencoder
+	3. untuk API yang membutuhkakn insert data image jangan lupa menggunakan multer
 		cara penggunaan multer untuk ubah img jadi blob :
 		1. instal multer "npm i multer"
 		2. buat variable untuk storage "const storage = multer.memoryStorage()"
