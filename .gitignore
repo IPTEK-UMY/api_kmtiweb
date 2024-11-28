@@ -1,0 +1,5 @@
+*.json
+*.txt
+.env
+src/app/views
+node_modules
