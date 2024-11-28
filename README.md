@@ -6,7 +6,7 @@
 		route : /anggota
 		method : POST
 		
-		name yang harus di set form : nama, jabatan, divisi, foto
+		name yang harus di set pada form : nama, jabatan, divisi, foto
 
 	> READ
 		$Anggota all
@@ -35,7 +35,7 @@
 		route : /divisi
 		method : POST
 		
-		name yang harus di set form : nama, jabatan, divisi, foto
+		name yang harus di set pada form : divisi
 
 	> READ
 		$divisi all
@@ -59,7 +59,7 @@
 		route : /proker
 		method : POST
 		
-		name yang harus di set form : nama, jabatan, divisi, foto
+		name yang harus di set pada form : proker, divisi(foreign key)
 
 	> READ
 		$divisi all
@@ -75,30 +75,6 @@
 
 	> DELETE
 		route : /proker/:id
-		method : DELETE
-
-- data penanggung jawab
-
-	> CREATE
-		route : /pj
-		method : POST
-		
-		name yang harus di set form : nama, jabatan, divisi, foto
-
-	> READ
-		$divisi all
-			route : /pj
-			method : GET
-		$divisi by id (yang digunakan id proker)
-			route : /pj/:id
-			method : GET
-
-	> UPDATE
-		route : /pj/:id
-		method : PUT
-
-	> DELETE
-		route : /pj/:id
 		method : DELETE
 
 peningkatan berikutnya : 
